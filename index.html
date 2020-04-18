@@ -10,8 +10,11 @@
 <style class="cp-pen-styles">
           body {
                     margin-top:5px;
-  background: #dfe7ef;
+  background: url(https://miraculous775.webnode.com/_files/200000027-537bc537be/450/76 sin título_20200221203424.png) center center;
+  background-size:cover;
   font-family: "Bitter", serif;
+  /*filter: blur(8px);*/
+  /*-webkit-filter: blur(8px);*/
 }
 
 * {
@@ -323,10 +326,12 @@ h1{font-family: 'Fjalla One', sans-serif;}
 
 .github-btn {
   position: absolute;
+  cursor:pointer;
   right: 40px;
   bottom: 50px;
   text-decoration: none;
   padding: 15px 25px;
+  z-index:5;
   border-radius: 4px;
   box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
   background: #005599;
@@ -394,11 +399,46 @@ h1{font-family: 'Fjalla One', sans-serif;}
   pointer-events: none;
   opacity: 0;
 }
-
+.coverimg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.coverimg:before {
+  content: "";
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 30px;
+  transform: scale(0.9);
+  filter: blur(10px);
+  opacity: 0.9;
+  border-radius: 15px;
+}
+.coverimg:after {
+  content: "";
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
+  display: block;
+  z-index: 2;
+  position: absolute;
+  border-radius: 15px;
+}
         </style>
 </head>
-<body>
-<div style="text-align:center;">
+<body><div style="text-align:center;">
           <h1>Miraculous Instrumentals</h1>
 </div>
 <div class="wrapper" id="app">
@@ -453,7 +493,7 @@ h1{font-family: 'Fjalla One', sans-serif;}
 </div>
 <div v-cloak></div>
 </div>
-<a href="https://wayzzepisodes.github.io" target="_blank" class="github-btn">
+<a href="https://miraculous.ml" target="_blank" class="github-btn">
 WayzzEpisodes
 </a>
 </div>
@@ -509,101 +549,101 @@ WayzzEpisodes
 </svg>
 <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
 <script id="rendered-js">
-names=["alias=,img=,src=Akumatization1.mp3", "alias=,img=,src=Akumatization2.mp3", "alias=,img=,src=Akumatization3.mp3", "alias=,img=,src=AndreGlacier.mp3", "alias=,img=,src=AnouncingTheFightMayura.mp3", "alias=,img=,src=AspikTransformation.mp3", "alias=,img=,src=BigBang.mp3", "alias=,img=,src=BunnixTransformation.mp3", "alias=,img=,src=Carapace1.mp3", "alias=,img=,src=Carapace2.mp3", "alias=,img=,src=CatNoir - Guitar.mp3", "alias=,img=,src=CatNoirTransformation1.mp3", "alias=,img=,src=CatNoirTransformation2.mp3", "alias=,img=,src=Cataclysm.mp3", "alias=,img=,src=ChristmasSaveTheButterflies.mp3", "alias=,img=,src=ElMuroQueNosSepara.mp3", "alias=,img=,src=GlaciatorMarichat.mp3", "alias=,img=,src=InTheRain.mp3", "alias=,img=,src=King Monkey.mp3", "Ladybug Guitar v1.mp3", "alias=,img=,src=Ladybug Guitar v2.mp3", "alias=,img=,src=Ladybug Guitar v3.mp3", "alias=,img=,src=LadybugTransformationv1.mp3", "alias=,img=,src=LadybugTransformationv2.mp3", "alias=,img=,src=Loneliness.mp3", "alias=,img=,src=LouAndLenniKimMiraculousThemeEnglish.mp3", "alias=,img=,src=LouAndLenniKimMiraculousThemeFrench.mp3", "alias=,img=,src=LuckyCharm.mp3", "alias=,img=,src=LukaDeclaringLoveForMarinette.mp3", "alias=,img=,src=LukaGuitarSong.mp3", "alias=,img=,src=LukaGuitarSongUnfinished.mp3", "alias=,img=,src=MakingDoseAkumas.mp3", "alias=,img=,src=MakingDoseAkumas2.mp3", "alias=,img=,src=MarinettesRealisationAdrienLovesSomeoneElse.mp3", "alias=,img=,src=Mayura Fight.mp3", "alias=,img=,src=MayuraMusic.mp3", "alias=,img=,src=MiraculousThemeSongEnglish.mp3", "alias=,img=,src=MiraculousThemeSongFrench.mp3", "alias=,img=,src=MiraculousThemeSongGerman.mp3", "alias=,img=,src=MiraculousThemeSongInstrumental.mp3", "alias=,img=,src=MiraculousThemeSongKoreanInstrumental.mp3", "alias=,img=,src=MiraculousThemeSongKoreanInstrumental2.mp3", "alias=,img=,src=MiraculousThemeSongLatinSpanish.mp3", "alias=,img=,src=MiraculousThemeSongSpanish.mp3", "alias=,img=,src=MultimouseTransformation.mp3", "alias=,img=,src=OblivioKiss.mp3", "alias=,img=,src=OutroMusic.mp3", "alias=,img=,src=PVMusic1.mp3", "alias=,img=,src=PVMusic2.mp3", "alias=,img=,src=PegasusTransformation.mp3", "alias=,img=,src=QueenBee.mp3", "alias=,img=,src=RenaRouge1.mp3", "alias=,img=,src=RenaRouge2.mp3", "alias=,img=,src=RyukoTransformation.mp3", "alias=,img=,src=SaveTheButterflies.mp3", "alias=,img=,src=SlowDance.mp3", "alias=,img=,src=StationationEng.mp3", "alias=,img=,src=StationationFr.mp3", "alias=,img=,src=ThemeInstrumental.mp3", "alias=,img=,src=Unicorns.mp3", "alias=,img=,src=UnicornsInstrumental.mp3", "alias=,img=,src=ViperionTransformation.mp3", "alias=,img=,src=You are our everyday Ladybug.mp3"];
+names=["alias=,img=,src=Akumatization1.mp3", "alias=,img=,src=Akumatization2.mp3", "alias=,img=,src=Akumatization3.mp3", "alias=,img=,src=AndreGlacier.mp3", "alias=,img=,src=AnouncingTheFightMayura.mp3", "alias=,img=,src=AspikTransformation.mp3", "alias=,img=,src=BigBang.mp3", "alias=,img=,src=BunnixTransformation.mp3", "alias=,img=,src=Carapace1.mp3", "alias=,img=,src=Carapace2.mp3", "alias=,img=,src=CatNoir - Guitar.mp3", "alias=,img=,src=CatNoirTransformation1.mp3", "alias=,img=,src=CatNoirTransformation2.mp3", "alias=,img=,src=Cataclysm.mp3", "alias=,img=,src=ChristmasSaveTheButterflies.mp3", "alias=,img=,src=ElMuroQueNosSepara.mp3", "alias=,img=,src=GlaciatorMarichat.mp3", "alias=,img=,src=InTheRain.mp3", "alias=,img=,src=King Monkey.mp3", "alias=,img=,src=Ladybug Guitar v1.mp3", "alias=,img=,src=Ladybug Guitar v2.mp3", "alias=,img=,src=Ladybug Guitar v3.mp3", "alias=,img=,src=LadybugTransformationv1.mp3", "alias=,img=,src=LadybugTransformationv2.mp3", "alias=,img=,src=Loneliness.mp3", "alias=,img=,src=LouAndLenniKimMiraculousThemeEnglish.mp3", "alias=,img=,src=LouAndLenniKimMiraculousThemeFrench.mp3", "alias=,img=,src=LuckyCharm.mp3", "alias=,img=,src=LukaDeclaringLoveForMarinette.mp3", "alias=,img=,src=LukaGuitarSong.mp3", "alias=,img=,src=LukaGuitarSongUnfinished.mp3", "alias=,img=,src=MakingDoseAkumas.mp3", "alias=,img=,src=MakingDoseAkumas2.mp3", "alias=,img=,src=MarinettesRealisationAdrienLovesSomeoneElse.mp3", "alias=,img=,src=Mayura Fight.mp3", "alias=,img=,src=MayuraMusic.mp3", "alias=,img=,src=MiraculousThemeSongEnglish.mp3", "alias=,img=,src=MiraculousThemeSongFrench.mp3", "alias=,img=,src=MiraculousThemeSongGerman.mp3", "alias=,img=,src=MiraculousThemeSongInstrumental.mp3", "alias=,img=,src=MiraculousThemeSongKoreanInstrumental.mp3", "alias=,img=,src=MiraculousThemeSongKoreanInstrumental2.mp3", "alias=,img=,src=MiraculousThemeSongLatinSpanish.mp3", "alias=,img=,src=MiraculousThemeSongSpanish.mp3", "alias=,img=,src=MultimouseTransformation.mp3", "alias=,img=,src=OblivioKiss.mp3", "alias=,img=,src=OutroMusic.mp3", "alias=,img=,src=PVMusic1.mp3", "alias=,img=,src=PVMusic2.mp3", "alias=,img=,src=PegasusTransformation.mp3", "alias=,img=,src=QueenBee.mp3", "alias=,img=,src=RenaRouge1.mp3", "alias=,img=,src=RenaRouge2.mp3", "alias=,img=,src=RyukoTransformation.mp3", "alias=,img=,src=SaveTheButterflies.mp3", "alias=,img=,src=SlowDance.mp3", "alias=,img=,src=StationationEng.mp3", "alias=,img=,src=StationationFr.mp3", "alias=,img=,src=ThemeInstrumental.mp3", "alias=,img=,src=Unicorns.mp3", "alias=,img=,src=UnicornsInstrumental.mp3", "alias=,img=,src=ViperionTransformation.mp3", "alias=,img=,src=You are our everyday Ladybug.mp3"];
 var tracks=[{
         name: "Korean opening",
         artist: "ZAG Heroez™",
         cover: "https://i.ytimg.com/vi/EuhCAluhJrs/maxresdefault.jpg",
-        source: "https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Korean%20opening%20instrumental.mp3",
-        url: "https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Korean%20opening%20instrumental.mp3",
+        source: "https://miraculous.ml/mlinstrumentals/wayzz/Korean%20opening%20instrumental.mp3",
+        url: "https://miraculous.ml/mlinstrumentals/wayzz/Korean%20opening%20instrumental.mp3",
         favorited: false
       },
     {
         name: "Stormy Weather akumatization music",
         artist: "ZAG Heroez™",
         cover: "https://vignette.wikia.nocookie.net/lady-bug/images/2/25/SW_%2818%29.png/revision/latest?cb=20181025215543",
-        source: "https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Stormy%20Weather%20akumatization%20music%20instrumental.mp3",
-        url: "https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Stormy%20Weather%20akumatization%20music%20instrumental.mp3",
+        source: "https://miraculous.ml/mlinstrumentals/wayzz/Stormy%20Weather%20akumatization%20music%20instrumental.mp3",
+        url: "https://miraculous.ml/mlinstrumentals/wayzz/Stormy%20Weather%20akumatization%20music%20instrumental.mp3",
         favorited: false },
     {
         name:"Adrienette Dance",
         artist:"ZAG Heroez™",
         cover:"https://i.pinimg.com/originals/6b/5e/d9/6b5ed98734474ff146b7578649fb54db.png",
-        source:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Adrienette%20dance%20instrumental.mp3",
-        url:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Adrienette%20dance%20instrumental.mp3",
+        source:"https://miraculous.ml/mlinstrumentals/wayzz/Adrienette%20dance%20instrumental.mp3",
+        url:"https://miraculous.ml/mlinstrumentals/wayzz/Adrienette%20dance%20instrumental.mp3",
         favorited:false},
      {
         name:"Adrienette Kiss Puppeteer 2",
         artist:"ZAG Heroez™",
         cover:"https://vignette.wikia.nocookie.net/lady-bug/images/a/a4/The_Puppeteer_2_-_Infobox_Image.png/revision/latest?cb=20190802130038",
-        source:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Adrienette%20kiss%20scene%20Puppeteer2%20instrumental.mp3",
-        url:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Adrienette%20kiss%20scene%20Puppeteer2%20instrumental.mp3",
+        source:"https://miraculous.ml/mlinstrumentals/wayzz/Adrienette%20kiss%20scene%20Puppeteer2%20instrumental.mp3",
+        url:"https://miraculous.ml/mlinstrumentals/wayzz/Adrienette%20kiss%20scene%20Puppeteer2%20instrumental.mp3",
         favorited:false},
      {
         name:"Bread tasting scene",
         artist:"ZAG Heroez™",
         cover:"https://i.ytimg.com/vi/ZfD2_-gtVPo/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvSEaVpDKqFaTC57zChTWivXaotw",
-        source:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Bread%20tasting%20scene%20instrumental.mp3",
-        url:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Bread%20tasting%20scene%20instrumental.mp3",
+        source:"https://miraculous.ml/mlinstrumentals/wayzz/Bread%20tasting%20scene%20instrumental.mp3",
+        url:"https://miraculous.ml/mlinstrumentals/wayzz/Bread%20tasting%20scene%20instrumental.mp3",
         favorited:false},
      {
         name:"Chloe rates macaroons",
         artist:"ZAG Heroez™",
         cover:"https://i.ytimg.com/vi/TDcqBzNR19U/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDgK-YEPQ2D1X9EPFPmHpO0R_FUTw",
-        source:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Chloe%20rates%20macaroons%20scene%20instrumental.mp3",
-        url:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Chloe%20rates%20macaroons%20scene%20instrumental.mp3",
+        source:"https://miraculous.ml/mlinstrumentals/wayzz/Chloe%20rates%20macaroons%20scene%20instrumental.mp3",
+        url:"https://miraculous.ml/mlinstrumentals/wayzz/Chloe%20rates%20macaroons%20scene%20instrumental.mp3",
         favorited:false},
      {
         name:"Animaestro Fight",
         artist:"ZAG Heroez™",
         cover:"https://i.ytimg.com/vi/MmZS4HmfWq0/maxresdefault.jpg",
-        source:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Fighting%20with%20Animaestro%20scene%20instrumental.mp3",
-        url:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Fighting%20with%20Animaestro%20scene%20instrumental.mp3",
+        source:"https://miraculous.ml/mlinstrumentals/wayzz/Fighting%20with%20Animaestro%20scene%20instrumental.mp3",
+        url:"https://miraculous.ml/mlinstrumentals/wayzz/Fighting%20with%20Animaestro%20scene%20instrumental.mp3",
         favorited:false},
      {
         name:"Gigantigan Fight from Weredad",
         artist:"ZAG Heroez™",
         cover:"https://i.ytimg.com/vi/GXvl7FSGQwc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDfwmWlpSGOA6yN47nBSgpeYBwIPQ",
-        source:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Fighting%20with%20Gigantitan%20scene%20instrumental%20[Weredad].mp3",
-        url:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Fighting%20with%20Gigantitan%20scene%20instrumental%20[Weredad].mp3",
+        source:"https://miraculous.ml/mlinstrumentals/wayzz/Fighting%20with%20Gigantitan%20scene%20instrumental%20[Weredad].mp3",
+        url:"https://miraculous.ml/mlinstrumentals/wayzz/Fighting%20with%20Gigantitan%20scene%20instrumental%20[Weredad].mp3",
         favorited:false},
      {
         name:"Dark Cupid Fight",
         artist:"ZAG Heroez™",
         cover:"https://i.ytimg.com/vi/ChVxaD40dwk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCf_lHdeLx-2E7r-6oKwPO2JB-Wow",
-        source:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Fighting%20with%20Dark%20Cupid%20instrumental.mp3",
-        url:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Fighting%20with%20Dark%20Cupid%20instrumental.mp3",
+        source:"https://miraculous.ml/mlinstrumentals/wayzz/Fighting%20with%20Dark%20Cupid%20instrumental.mp3",
+        url:"https://miraculous.ml/mlinstrumentals/wayzz/Fighting%20with%20Dark%20Cupid%20instrumental.mp3",
         favorited:false},
      {
         name:"Collector Fight",
         artist:"ZAG Heroez™",
         cover:"https://pm1.narvii.com/6975/2e5ff164f09782c734347880d38b840bc3deb290r1-640-346v2_hq.jpg",
-        source:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Fighting%20with%20Collector%20scene%20instrumental.mp3",
-        url:"https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Fighting%20with%20Collector%20scene%20instrumental.mp3",
+        source:"https://miraculous.ml/mlinstrumentals/wayzz/Fighting%20with%20Collector%20scene%20instrumental.mp3",
+        url:"https://miraculous.ml/mlinstrumentals/wayzz/Fighting%20with%20Collector%20scene%20instrumental.mp3",
         favorited:false},
     {
         name: "Kitty Section song :)",
         artist: "ZAG Heroez™",
         cover: "https://i.ytimg.com/vi/aBZYtSxigFU/maxresdefault.jpg",
-        source: "https://wayzzepisodes.github.io/mlinstrumentals/wayzz/%C2%ABKitty%20Section%C2%BB%20instrumental.mp3",
-        url: "https://wayzzepisodes.github.io/mlinstrumentals/wayzz/%C2%ABKitty%20Section%C2%BB%20instrumental.mp3",
+        source: "https://miraculous.ml/mlinstrumentals/wayzz/%C2%ABKitty%20Section%C2%BB%20instrumental.mp3",
+        url: "https://miraculous.ml/mlinstrumentals/wayzz/%C2%ABKitty%20Section%C2%BB%20instrumental.mp3",
         favorited: false },
     {
         name: "Master Fu's S2 first visit",
         artist: "ZAG Heroez™",
         cover: "https://i.ytimg.com/vi/TEdt_zAcWrU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCVKbD8nNDapvx2vxeDefh8CZD-OQ",
-        source: "https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Master%20Fu's%20S2%20first%20visit%20scene%20instrumental.mp3",
-        url: "https://wayzzepisodes.github.io/mlinstrumentals/wayzz/Master%20Fu's%20S2%20first%20visit%20scene%20instrumental.mp3",
+        source: "https://miraculous.ml/mlinstrumentals/wayzz/Master%20Fu's%20S2%20first%20visit%20scene%20instrumental.mp3",
+        url: "https://miraculous.ml/mlinstrumentals/wayzz/Master%20Fu's%20S2%20first%20visit%20scene%20instrumental.mp3",
         favorited: false }];
-	for(var i=0;i<names.length;i++){
-		tracks.push({
-			name: (names[i].includes(",")?(names[i].split(",")[0].includes("=")?(names[i].split(",")[0].split("=")[1]!=""?names[i].split(",")[0].split("=")[1]:names[i].split(",")[2].split("=")[1].replace(".mp3","")):names[i].split(",")[2].split("=")[1].replace(".mp3","")):names[i].split(",")[2].split("=")[1].replace(".mp3","")),
-	        artist: "ZAG Heroez™",
-	        cover: "https://i.ytimg.com/vi/TEdt_zAcWrU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCVKbD8nNDapvx2vxeDefh8CZD-OQ",
-	        source: "https://miraculous.ml/MusicRepo/NewInstrumentalsforWeb/"+names[i].split(",")[2].split("=")[1].replace(".mp3",""),
-	        url: "https://miraculous.ml/MusicRepo/NewInstrumentalsforWeb/"+names[i].split(",")[2].split("=")[1].replace(".mp3","")
-		});
-	}
+    for(var i=0;i<names.length;i++){try{
+        tracks.push({
+            name:(names[i].split(",")[0].split("=")[1]!=""?names[i].split(",")[0].split("=")[1]:names[i].split(",")[2].split("=")[1].replace(".mp3","")),
+            artist: "ZAG Heroez™",
+            cover: (names[i].split(",")[0].split("=")[1]!=""?names[i].split(",")[0].split("=")[1]:"https://image.freepik.com/free-vector/coming-soon-message-illuminated-with-light-projector_1284-3622.jpg"),
+            source: "https://miraculous.ml/MusicRepo/NewInstrumentalsforWeb/"+names[i].split(",")[2].split("=")[1],
+            url: "https://miraculous.ml/MusicRepo/NewInstrumentalsforWeb/"+names[i].split(",")[2].split("=")[1]
+        });}catch(err){alert(err.stack+" "+names[i])}
+    }
 
 
 new Vue({
@@ -715,7 +755,6 @@ new Vue({
       this.circleLeft = 0;
       this.audio.currentTime = 0;
       this.audio.src = this.currentTrack.source;
-      document.body.style.background='url('+this.currentTrack.source+')';
       setTimeout(() => {
         if (this.isTimerPlaying) {
           var playPromise = this.audio.play();
