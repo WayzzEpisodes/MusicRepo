@@ -2,6 +2,7 @@
 <html lang='en' class=''>
 <head><meta charset='UTF-8'>
 <meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
 <title>Miraculous Music</title>
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -456,9 +457,7 @@ h1{font-family: 'Fjalla One', sans-serif;}
 </svg>
 </div>
 <a :href="currentTrack.url" target="_blank" download class="player-controls__item">
-<svg class="icon">
-<use xlink:href="#icon-link"></use>
-</svg>
+<i class="fa fa-download" aria-hidden="true"></i>
 </a>
 <div class="player-controls__item" @click="prevTrack">
 <svg class="icon">
