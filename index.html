@@ -437,6 +437,9 @@ h1{font-family: 'Fjalla One', sans-serif;}
   position: absolute;
   border-radius: 15px;
 }
+          i:hover{
+                    color: #532ab9;
+          }
         </style>
 </head>
 <body><div style="margin-top:10px;color:white;text-align:center;">
@@ -456,7 +459,7 @@ h1{font-family: 'Fjalla One', sans-serif;}
 <use xlink:href="#icon-heart-o"></use>
 </svg>
 </div>
-<a :href="currentTrack.url" target="_blank" download class="player-controls__item">
+<a :href="currentTrack.url" target="_blank" class="player-controls__item">
 <i class="fa fa-download" aria-hidden="true"></i>
 </a>
 <div class="player-controls__item" @click="prevTrack">
